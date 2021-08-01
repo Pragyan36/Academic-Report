@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style type="text/css">
+		body{
+			background-image: url("../images/2.jpg");
+			background-size: cover;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div style="width: 90% ; height: 140px; background-color:transparent; margin: auto;">
+		<header style=" width: 100%; height:130px; background-color: transparent; ">
+		 <div style="width:15%; height: 100px; background-color: blue; float: left;">
+		 	<img src="../images/9.jpg" style="width: 100%; height: 100px;" >
+		 </div>
+		 <div style="width:85%; height:100px; background-color: red; float: right;">
+		 	<h1 style=" font-family: comic sans ms; text-align: center; color: white; height: 115px;"> Welcome To My Portfolio Website</h1>
+		 </div>
+		 <div class="nav" style="width: 100%; height: 40px; text-align: center; background-color:#bec4cf; float: right;">
+			<a href="../index.html">Home</a>
+			<a href="Blog.html">Blog</a>
+			<a href="Research.html">Research</a>
+			<a href="Contact us.html">Contact us</a>
+			<a href="CV.html">CV</a>
+		</div>
+	    </header>
+		<main>	
+			<div class="contact-title"> 
+				<h1 style="color: white">HELLO</h1>
+				<h2 style="color: white"> we are ready to serve you!<h2>
+			</div>
+			<div class="contact-form">
+				<form id="contact-form" method="post" onsubmit="validateForm()">
+					<input name="name"type="text" class="form-control" placeholder="Your name" required><br>
+					<input name="email"type="email" class="form-control" placeholder="Your Email" required><br>
+					<textarea name="message"type="text" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+					<input type ="submit" class="submit"value="SUBMIT">	
+				</form>
+				<script>
+		function validateForm() {
+			var nam = document.forms["messageForm"]["name"].value;
+			var emai = document.forms["messageForm"]["email"].value;
+
+			if (nam == ""){
+				alert("Name is Empty. Please fill the form.");
+			}else if(emai == ""){
+				alert("Email is Empty. Please fill the form.");
+			}else{
+				alert("Thank you for the feedback.");
+			}
+		}
+	</script>
+		</div>
+		</main>		
+	    <footer>
+		<div style="width: 100%; height:70px; background-color: black; color: white; text-align: center;">
+			<p> &copy; 2020 Pragyan Maharjan</p>
+			<a href="https://www.facebook.com/pragyan.maharjan.73"><img src="../images/f.jpg" style="width:3%; height:30px; border-radius:50%;"></a>
+			<a href="https://mail.google.com/mail/u/0/#inbox"><img src="../images/g.jpg" style="width:3%; height:30px; border-radius:50%;"></a>
+			<a href="https://www.instagram.com/pragyanmaharjan36/"><img src="../images/y.png" style="width:3%; height:30px; border-radius:50%;"></a>
+			<a href="https://www.youtube.com/channel/UCP2JgLc_Nv8RAqhHcT4zAgQ?view_as=subscriber"><img src="../images/download.png" style="width:3%; height:30px; border-radius:50%;"></a>
+
+		</div>
+	</footer>
+
+	</div>
+	
+
+</body>
+</html>
